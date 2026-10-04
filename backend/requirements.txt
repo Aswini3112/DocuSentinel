@@ -1,0 +1,35 @@
+# DocuSentinel AI - Backend Dependencies
+# Core Framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# Document Processing
+PyMuPDF==1.24.3
+python-docx==1.1.2
+Pillow==10.3.0
+pytesseract==0.3.10
+
+# AI / Embeddings / LLM
+openai==1.30.1
+sentence-transformers==3.0.1
+numpy==1.26.4
+
+# Vector Store
+chromadb==0.5.0
+
+# Database
+sqlalchemy==2.0.30
+aiosqlite==0.20.0
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.7.1
+pydantic-settings==2.3.0
+httpx==0.27.0
+aiofiles==23.2.1
+
+# Testing
+pytest==8.2.0
+pytest-asyncio==0.23.7
+httpx==0.27.0

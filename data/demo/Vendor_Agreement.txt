@@ -1,0 +1,100 @@
+AURORA SYSTEMS PVT. LTD.
+VENDOR SERVICES AGREEMENT — SUBCONTRACTOR ADDENDUM
+Document Reference: AURORA-VENDOR-2026-007
+Version: 1.2
+Classification: SYNTHETIC DEMO DOCUMENT — FOR DEMONSTRATION PURPOSES ONLY
+
+================================================================================
+PARTIES
+================================================================================
+
+This Vendor Services Agreement is between:
+
+  Prime Contractor:  Aurora Systems Pvt. Ltd. ("Aurora")
+  Subcontractor:     ByteForge Solutions Ltd. ("ByteForge")
+                     22 Software Park, Pune, Maharashtra 411057
+
+  Purpose: ByteForge shall provide specialized development resources for
+           Project Helios on behalf of Aurora Systems.
+
+================================================================================
+SECTION 1: ENGAGEMENT SCOPE
+================================================================================
+
+1.1 ByteForge shall provide:
+    - 4 senior software engineers
+    - 1 QA automation specialist
+    - 1 UI/UX designer
+
+1.2 Engagement Start Date: 1 April 2026
+
+1.3 Engagement End Date: 30 November 2026
+
+1.4 Primary Point of Contact (Aurora): Mr. Arjun Mehta
+
+================================================================================
+SECTION 2: FINANCIAL TERMS
+================================================================================
+
+2.1 Total Subcontract Value: USD 380,000
+
+2.2 Payment Terms: Monthly invoicing, net-30.
+
+2.3 Monthly Rate: USD 38,000 per month (10 months)
+
+2.4 Penalty for Non-Performance:
+    If ByteForge fails to meet agreed deliverable quality standards,
+    Aurora may deduct up to USD 5,000 per incident, max USD 25,000 total.
+
+================================================================================
+SECTION 3: DELIVERY OBLIGATIONS
+================================================================================
+
+3.1 ByteForge must complete all assigned modules by 30 November 2026.
+
+3.2 All code deliverables must pass Aurora's internal review process.
+
+3.3 ByteForge is responsible for:
+    - Supply Chain Management module (full development)
+    - CRM module (support development)
+
+================================================================================
+SECTION 4: CONFIDENTIALITY
+================================================================================
+
+4.1 ByteForge must not disclose any project details to third parties.
+
+4.2 All intellectual property created under this agreement belongs to
+    NovaTech Enterprises Ltd. per the prime contract terms.
+
+================================================================================
+SECTION 5: PROJECT MANAGER REFERENCE
+================================================================================
+
+5.1 According to Aurora's internal project assignment records, the
+    Project Manager for Project Helios is: Mr. Arjun Mehta
+    (NOTE: This may differ from the client-side status report assignment.)
+
+================================================================================
+SECTION 6: GOVERNING LAW
+================================================================================
+
+This agreement is governed by the laws of India.
+
+================================================================================
+SIGNATURES
+================================================================================
+
+Aurora Systems Pvt. Ltd.:
+Name: Mr. Arjun Mehta
+Date: 28 March 2026
+
+ByteForge Solutions Ltd.:
+Name: Ms. Kavya Reddy
+Designation: CEO, ByteForge Solutions Ltd.
+Date: 28 March 2026
+
+================================================================================
+END OF DOCUMENT
+SYNTHETIC DEMO DOCUMENT — NOT A REAL VENDOR AGREEMENT
+================================================================================

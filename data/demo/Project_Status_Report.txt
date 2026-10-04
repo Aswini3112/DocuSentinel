@@ -1,0 +1,102 @@
+NOVATECH ENTERPRISES LTD.
+PROJECT HELIOS — STATUS REPORT Q2 2026
+Document Reference: NOVA-STATUS-Q2-2026
+Version: 2.1
+Prepared by: Project Management Office
+Classification: SYNTHETIC DEMO DOCUMENT — FOR DEMONSTRATION PURPOSES ONLY
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+This report provides an updated status on Project Helios as of 30 June 2026.
+The project has encountered scope changes and timeline adjustments since the
+original contract was signed. This document supersedes internal schedule
+communications issued in April 2026.
+
+================================================================================
+SECTION 1: PROJECT OVERVIEW
+================================================================================
+
+Project Name:    Project Helios — ERP Platform
+Client:          NovaTech Enterprises Ltd.
+Vendor:          Aurora Systems Pvt. Ltd.
+Project Manager: Mr. Vikram Sharma  ← NOTE: Updated from original assignment
+Report Date:     30 June 2026
+
+================================================================================
+SECTION 2: REVISED TIMELINE
+================================================================================
+
+2.1 Original Project Deadline (per Contract):  15 November 2026
+
+2.2 REVISED Project Deadline:  30 November 2026
+    Reason for revision: Scope expansion approved by client on 15 May 2026.
+    The client requested addition of a Supply Chain Management module,
+    requiring 2 additional weeks of development.
+
+2.3 Revised Milestones:
+    - Phase 1 (Completed):                  30 April 2026   ✓
+    - Phase 2 (Core Development):            31 August 2026  (revised from 31 July)
+    - Phase 3 (Testing & QA):               15 October 2026 (revised)
+    - Phase 4 (Delivery & Handover):         30 November 2026
+
+2.4 Revised Project Duration: 9.5 months
+
+================================================================================
+SECTION 3: FINANCIAL UPDATE
+================================================================================
+
+3.1 Original Contract Value: USD 1,200,000
+
+3.2 REVISED Contract Value: USD 1,450,000
+    Additional scope: Supply Chain Management module
+    Change Order Reference: CO-2026-003
+    Approved by: Ms. Priya Nair (CTO, NovaTech)
+
+3.3 Updated Payment Schedule:
+    - Advance (paid):                        USD 300,000   ✓
+    - Phase 1 completion (paid):             USD 240,000   ✓
+    - Phase 2 completion (pending):          USD 435,000
+    - Final delivery:                        USD 475,000
+
+3.4 Late Payment Penalty (per revised terms): 1.5% per month
+
+================================================================================
+SECTION 4: RISK ASSESSMENT
+================================================================================
+
+4.1 HIGH RISK: Revised deadline of 30 November 2026 is aggressive given
+    current development velocity of 68% on core modules.
+
+4.2 MEDIUM RISK: The revised total cost of USD 1,450,000 may require
+    board approval at NovaTech per internal procurement policy.
+
+4.3 LOW RISK: Team attrition — one senior developer departed in May 2026.
+
+================================================================================
+SECTION 5: CURRENT STATUS BY MODULE
+================================================================================
+
+Module                    | Status      | Completion %
+--------------------------|-------------|-------------
+Inventory Management      | In Progress |    85%
+Financial Reporting       | In Progress |    70%
+Human Resources           | In Progress |    60%
+CRM                       | In Progress |    55%
+Supply Chain (new)        | Not Started |     0%
+
+================================================================================
+SECTION 6: NOTES
+================================================================================
+
+6.1 The penalty clause for late delivery remains under renegotiation.
+    Current contract states USD 15,000/week. Vendor has proposed capping
+    total penalty at USD 75,000 (revised from USD 120,000).
+
+6.2 Project ownership remains with NovaTech per original contract terms.
+
+================================================================================
+END OF DOCUMENT
+SYNTHETIC DEMO DOCUMENT — NOT A REAL PROJECT REPORT
+================================================================================

@@ -1,0 +1,94 @@
+NOVATECH ENTERPRISES LTD.
+PROJECT HELIOS — FINANCIAL SUMMARY REPORT
+Document Reference: NOVA-FIN-2026-Q2
+Version: 1.0
+Prepared by: Finance Department
+Classification: SYNTHETIC DEMO DOCUMENT — FOR DEMONSTRATION PURPOSES ONLY
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+This Financial Summary consolidates all approved expenditures and commitments
+for Project Helios as of 30 June 2026.
+
+All figures in USD unless noted.
+
+================================================================================
+SECTION 1: APPROVED BUDGET
+================================================================================
+
+1.1 Original Approved Budget:     USD 1,200,000
+    (Per Board Resolution BR-2026-14, dated 15 February 2026)
+
+1.2 Supplementary Approval:       USD 180,000
+    (Per Board Resolution BR-2026-29, dated 20 May 2026)
+    Purpose: Supply Chain module addition
+
+1.3 Total Approved Budget:        USD 1,380,000
+
+NOTE: The Finance Department has only received board approval for
+USD 1,380,000. The vendor's status report references a revised contract
+value of USD 1,450,000. The difference of USD 70,000 has NOT been
+formally approved by the Finance Committee as of the date of this report.
+
+================================================================================
+SECTION 2: COMMITTED EXPENDITURES
+================================================================================
+
+2.1 Prime Contract (Aurora Systems):     USD 1,200,000   (original)
+2.2 Change Order CO-2026-003:            USD 180,000     (approved)
+2.3 Total Committed:                     USD 1,380,000
+
+================================================================================
+SECTION 3: PAYMENTS MADE
+================================================================================
+
+Date            | Description                  | Amount
+----------------|------------------------------|----------
+15 March 2026   | Advance payment to Aurora    | USD 300,000
+5 May 2026      | Phase 1 completion payment   | USD 240,000
+                |                              |
+Total Paid:     |                              | USD 540,000
+Remaining:      |                              | USD 840,000
+
+================================================================================
+SECTION 4: COST OVERRUN ANALYSIS
+================================================================================
+
+4.1 Approved Budget:                      USD 1,380,000
+4.2 Vendor's Claimed Contract Value:      USD 1,450,000
+4.3 Unapproved Variance:                  USD 70,000
+
+STATUS: BUDGET DISCREPANCY — REQUIRES RESOLUTION
+
+The Finance Department does not recognize the USD 1,450,000 figure until
+formal board approval is obtained.
+
+================================================================================
+SECTION 5: PAYMENT DEADLINE REFERENCE
+================================================================================
+
+5.1 All final payments must be processed no later than 15 December 2026,
+    subject to successful project delivery.
+
+5.2 The original contract deadline of 15 November 2026 governs
+    penalty calculations for the Finance Department.
+    The Finance Department does NOT recognize the revised deadline of
+    30 November 2026 as it has not been formally incorporated into
+    an executed contract amendment filed with this department.
+
+================================================================================
+SECTION 6: PENALTY RESERVES
+================================================================================
+
+6.1 Finance has reserved USD 120,000 for potential late delivery penalties
+    (per original contract: USD 15,000/week x 8 weeks max).
+
+6.2 The vendor's proposed revised penalty cap of USD 75,000 has NOT been
+    approved by Finance.
+
+================================================================================
+END OF DOCUMENT
+SYNTHETIC DEMO DOCUMENT — NOT A REAL FINANCIAL REPORT
+================================================================================

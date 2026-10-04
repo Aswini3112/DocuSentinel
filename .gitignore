@@ -1,0 +1,47 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# ── Secrets — NEVER commit these ──────────────────────────────────────────
+backend/.env
+.env
+
+# ── Runtime data — too large / machine-specific ───────────────────────────
+data/uploads/
+data/vectorstore/
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# ── Node / Frontend ────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+
+# ── Testing artifacts ──────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+tests/tmp_uploads/
+tests/tmp_vectorstore/
+
+# ── IDE ────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────────────────
+*.log

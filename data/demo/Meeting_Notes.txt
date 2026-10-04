@@ -1,0 +1,121 @@
+NOVATECH ENTERPRISES LTD. & AURORA SYSTEMS PVT. LTD.
+PROJECT HELIOS — STEERING COMMITTEE MEETING NOTES
+Meeting Reference: HELIOS-SCM-006
+Date: 15 May 2026
+Location: NovaTech Head Office, Conference Room B, Bangalore
+Classification: SYNTHETIC DEMO DOCUMENT — FOR DEMONSTRATION PURPOSES ONLY
+
+================================================================================
+ATTENDEES
+================================================================================
+
+NovaTech Enterprises Ltd.:
+  - Ms. Priya Nair           (CTO) — Chair
+  - Mr. Suresh Kumar          (CFO)
+  - Ms. Anita Rao             (Head of PMO)
+
+Aurora Systems Pvt. Ltd.:
+  - Mr. Arjun Mehta           (Managing Director)
+  - Mr. Vikram Sharma         (Project Manager)
+  - Ms. Lakshmi Iyer          (Technical Lead)
+
+ByteForge Solutions Ltd.:
+  - Ms. Kavya Reddy           (CEO)
+
+================================================================================
+AGENDA ITEM 1: SCOPE CHANGE REQUEST
+================================================================================
+
+1.1 Aurora presented a formal scope change request to add a Supply Chain
+    Management (SCM) module to Project Helios.
+
+1.2 Discussion:
+    - Ms. Nair confirmed the business need for SCM integration.
+    - Mr. Kumar raised concerns about budget impact.
+    - The additional cost was discussed. Aurora quoted USD 250,000 for
+      the SCM module. NovaTech countered with USD 180,000. After
+      negotiation, both parties agreed to USD 180,000.
+
+1.3 Decision: Scope change APPROVED. Change Order CO-2026-003 to be issued.
+
+1.4 Impact on timeline:
+    - Mr. Mehta stated the revised deadline would be 30 November 2026.
+    - Ms. Nair verbally agreed subject to written contract amendment.
+
+ACTION: Legal teams to prepare contract amendment within 14 days.
+STATUS (as of report date): Contract amendment NOT YET EXECUTED.
+
+================================================================================
+AGENDA ITEM 2: PROJECT MANAGER CLARIFICATION
+================================================================================
+
+2.1 NovaTech's PMO (Ms. Anita Rao) noted discrepancy: NovaTech's internal
+    records list Mr. Vikram Sharma as Project Manager, while original
+    contract lists Mr. Arjun Mehta.
+
+2.2 Aurora clarified: Mr. Arjun Mehta is the Account Director / primary
+    signatory. Mr. Vikram Sharma is the day-to-day Project Manager.
+
+2.3 Decision: Both names to appear in project documentation going forward.
+    Mr. Vikram Sharma is confirmed as operational Project Manager.
+    Mr. Arjun Mehta remains contract signatory.
+
+================================================================================
+AGENDA ITEM 3: FINANCIAL TERMS DISCUSSION
+================================================================================
+
+3.1 Mr. Kumar (CFO) noted Finance has only approved USD 1,380,000.
+
+3.2 The revised contract value of USD 1,450,000 discussed in vendor
+    documentation was NOT agreed in this meeting. Aurora confirmed
+    the correct revised total is USD 1,380,000.
+
+3.3 Decision: Total revised contract value confirmed as USD 1,380,000.
+    Any reference to USD 1,450,000 in Aurora's documentation is an error.
+
+================================================================================
+AGENDA ITEM 4: PENALTY CLAUSE DISCUSSION
+================================================================================
+
+4.1 Aurora proposed reducing the late delivery penalty cap from
+    USD 120,000 to USD 75,000 given expanded scope.
+
+4.2 NovaTech (Mr. Kumar) rejected this proposal. Original penalty terms
+    (USD 15,000/week, max USD 120,000) remain in force.
+
+4.3 Penalty applicability date: Ms. Nair confirmed that penalty calculations
+    will be based on the ORIGINAL deadline of 15 November 2026 ONLY IF the
+    contract amendment extending the deadline to 30 November 2026 is not
+    executed. As of meeting date, amendment is pending.
+
+================================================================================
+AGENDA ITEM 5: LATE PAYMENT PENALTY
+================================================================================
+
+5.1 Aurora confirmed original late payment penalty rate of 2% per month
+    applies. The 1.5% figure in the status report was an error.
+
+5.2 Ms. Nair acknowledged and confirmed 2% per month applies per
+    original contract.
+
+================================================================================
+ACTIONS SUMMARY
+================================================================================
+
+Action                                  | Owner        | Deadline
+----------------------------------------|--------------|----------
+Issue Change Order CO-2026-003          | Legal/Aurora | 29 May 2026
+Execute contract amendment (deadline)  | Both Legal   | 29 May 2026
+Update project documentation (PM name) | Aurora PMO   | 22 May 2026
+Confirm final contract value in writing | Both CFOs    | 29 May 2026
+
+================================================================================
+MINUTES APPROVED BY:
+Ms. Priya Nair — NovaTech Enterprises Ltd.
+Mr. Arjun Mehta — Aurora Systems Pvt. Ltd.
+Date of Approval: 20 May 2026
+
+================================================================================
+END OF DOCUMENT
+SYNTHETIC DEMO DOCUMENT — NOT REAL MEETING MINUTES
+================================================================================

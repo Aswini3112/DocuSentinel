@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #1a2d4a #050c1a;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #050c1a;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1a2d4a;
+    border-radius: 3px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #1e3a5f;
+  }
+
+  html, body {
+    @apply bg-sentinel-bg text-sentinel-text;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: rgba(0, 212, 255, 0.2);
+    color: #e2e8f0;
+  }
+}
+
+@layer components {
+  /* ── Glass Card ─────────────────────────── */
+  .glass-card {
+    @apply bg-sentinel-surface border border-sentinel-border rounded-xl;
+    @apply shadow-glass backdrop-blur-sm;
+    background: linear-gradient(135deg, rgba(10,22,40,0.95) 0%, rgba(5,12,26,0.98) 100%);
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-200;
+    @apply hover:border-sentinel-border-bright hover:shadow-cyan-glow;
+  }
+
+  /* ── Status Badges ──────────────────────── */
+  .badge-verified {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+    @apply bg-emerald-500/10 text-emerald-400 border border-emerald-500/20;
+  }
+
+  .badge-conflicting {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+    @apply bg-amber-500/10 text-amber-400 border border-amber-500/20;
+  }
+
+  .badge-uncertain {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+    @apply bg-purple-500/10 text-purple-400 border border-purple-500/20;
+  }
+
+  .badge-not-found {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+    @apply bg-slate-500/10 text-slate-400 border border-slate-500/20;
+  }
+
+  .badge-high {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-bold;
+    @apply bg-red-500/15 text-red-400 border border-red-500/25;
+  }
+
+  .badge-medium {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-bold;
+    @apply bg-amber-500/15 text-amber-400 border border-amber-500/25;
+  }
+
+  .badge-low {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-bold;
+    @apply bg-blue-500/15 text-blue-400 border border-blue-500/25;
+  }
+
+  /* ── Buttons ────────────────────────────── */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold;
+    @apply bg-sentinel-cyan text-sentinel-bg transition-all duration-200;
+    @apply hover:bg-cyan-300 hover:shadow-cyan-glow active:scale-95;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-none;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold;
+    @apply bg-sentinel-border text-sentinel-text border border-sentinel-border-bright;
+    @apply transition-all duration-200 hover:bg-sentinel-border-bright active:scale-95;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold;
+    @apply bg-red-500/10 text-red-400 border border-red-500/20;
+    @apply transition-all duration-200 hover:bg-red-500/20 active:scale-95;
+  }
+
+  /* ── Inputs ─────────────────────────────── */
+  .input-field {
+    @apply w-full bg-sentinel-bg border border-sentinel-border rounded-lg;
+    @apply px-4 py-3 text-sm text-sentinel-text placeholder-sentinel-gray;
+    @apply focus:outline-none focus:border-sentinel-cyan focus:ring-1 focus:ring-sentinel-cyan/30;
+    @apply transition-all duration-200;
+  }
+
+  /* ── Stat Cards ─────────────────────────── */
+  .stat-card {
+    @apply glass-card p-5 flex flex-col gap-2;
+  }
+
+  .stat-value {
+    @apply text-3xl font-bold text-sentinel-text;
+  }
+
+  .stat-label {
+    @apply text-xs uppercase tracking-widest text-sentinel-gray font-medium;
+  }
+
+  /* ── Section Header ─────────────────────── */
+  .section-header {
+    @apply text-xs uppercase tracking-widest text-sentinel-cyan font-semibold mb-4;
+    @apply flex items-center gap-2;
+  }
+
+  .section-header::before {
+    content: '';
+    @apply block w-4 h-px bg-sentinel-cyan;
+  }
+
+  /* ── Evidence highlight ─────────────────── */
+  .evidence-highlight {
+    @apply bg-sentinel-cyan/5 border-l-2 border-sentinel-cyan/50 pl-3 py-1;
+    @apply text-sm text-sentinel-text-dim leading-relaxed;
+  }
+
+  /* ── Progress bar ───────────────────────── */
+  .confidence-bar {
+    @apply h-2 rounded-full bg-sentinel-border overflow-hidden;
+  }
+
+  .confidence-fill {
+    @apply h-full rounded-full transition-all duration-700;
+  }
+
+  /* ── Conflict banner ────────────────────── */
+  .conflict-banner {
+    @apply flex items-start gap-3 p-4 rounded-lg border;
+    @apply bg-amber-500/5 border-amber-500/20;
+  }
+
+  /* ── Nav item ───────────────────────────── */
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium;
+    @apply text-sentinel-gray transition-all duration-150;
+    @apply hover:text-sentinel-text hover:bg-sentinel-border/50;
+  }
+
+  .nav-item.active {
+    @apply text-sentinel-cyan bg-sentinel-cyan/10 border border-sentinel-cyan/20;
+  }
+}
+
+@layer utilities {
+  .text-gradient-cyan {
+    @apply bg-gradient-to-r from-sentinel-cyan to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .border-glow-cyan {
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.3), 0 0 20px rgba(0, 212, 255, 0.1);
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}

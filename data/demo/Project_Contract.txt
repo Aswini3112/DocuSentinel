@@ -1,0 +1,117 @@
+AURORA SYSTEMS PVT. LTD.
+PROJECT DEVELOPMENT CONTRACT
+Document Reference: AURORA-CONTRACT-2026-001
+Version: 1.0
+Classification: SYNTHETIC DEMO DOCUMENT — FOR DEMONSTRATION PURPOSES ONLY
+
+================================================================================
+PARTIES
+================================================================================
+
+This Software Development Agreement ("Agreement") is entered into on 1 March 2026
+between:
+
+  Client:     NovaTech Enterprises Ltd.
+              14 Innovation Drive, Bangalore, Karnataka 560001
+
+  Vendor:     Aurora Systems Pvt. Ltd.
+              88 Techpark Avenue, Hyderabad, Telangana 500081
+
+================================================================================
+SECTION 1: PROJECT SCOPE
+================================================================================
+
+1.1 Project Name: Project Helios — Enterprise Resource Planning Platform
+
+1.2 Project Description:
+    Aurora Systems Pvt. Ltd. shall design, develop, test, and deliver a
+    fully functional Enterprise Resource Planning (ERP) platform for
+    NovaTech Enterprises Ltd. The platform shall include modules for:
+    - Inventory Management
+    - Financial Reporting
+    - Human Resources
+    - Customer Relationship Management (CRM)
+
+1.3 Project Manager (Vendor Side): Mr. Arjun Mehta
+    Project Manager (Client Side): Ms. Priya Nair
+
+================================================================================
+SECTION 2: TIMELINE AND MILESTONES
+================================================================================
+
+2.1 Project Start Date: 15 March 2026
+
+2.2 Project Deadline: 15 November 2026
+
+2.3 Milestones:
+    - Phase 1 (Requirements & Design):  30 April 2026
+    - Phase 2 (Core Development):        31 July 2026
+    - Phase 3 (Testing & QA):            30 September 2026
+    - Phase 4 (Delivery & Handover):     15 November 2026
+
+2.4 Project Duration: 8 months
+
+================================================================================
+SECTION 3: FINANCIAL TERMS
+================================================================================
+
+3.1 Total Contract Value: USD 1,200,000
+
+3.2 Payment Schedule:
+    - Advance (on signing):              USD 300,000   (25%)
+    - Phase 1 completion:                USD 240,000   (20%)
+    - Phase 2 completion:                USD 360,000   (30%)
+    - Final delivery:                    USD 300,000   (25%)
+
+3.3 Late Payment Penalty: 2% per month on outstanding amount.
+
+3.4 Currency: All payments in USD unless otherwise agreed in writing.
+
+================================================================================
+SECTION 4: PENALTY CLAUSES
+================================================================================
+
+4.1 Late Delivery Penalty:
+    If Aurora Systems fails to deliver by the deadline of 15 November 2026,
+    a penalty of USD 15,000 per week shall be applied, up to a maximum of
+    USD 120,000 (8 weeks).
+
+4.2 Quality Penalty:
+    If more than 5% critical bugs remain at delivery, an additional
+    USD 20,000 deduction applies.
+
+================================================================================
+SECTION 5: INTELLECTUAL PROPERTY
+================================================================================
+
+5.1 All deliverables developed under this contract become the sole intellectual
+    property of NovaTech Enterprises Ltd. upon full payment.
+
+5.2 Aurora Systems retains the right to use non-confidential components as
+    part of their standard software library.
+
+================================================================================
+SECTION 6: GOVERNING LAW
+================================================================================
+
+This Agreement is governed by the laws of India.
+Disputes shall be resolved by arbitration in Bangalore, Karnataka.
+
+================================================================================
+SECTION 7: SIGNATURES
+================================================================================
+
+Authorized Signatory — NovaTech Enterprises Ltd.:
+Name: Ms. Priya Nair
+Designation: Chief Technology Officer
+Date: 1 March 2026
+
+Authorized Signatory — Aurora Systems Pvt. Ltd.:
+Name: Mr. Arjun Mehta
+Designation: Managing Director
+Date: 1 March 2026
+
+================================================================================
+END OF DOCUMENT
+SYNTHETIC DEMO DOCUMENT — NOT A REAL LEGAL AGREEMENT
+================================================================================
