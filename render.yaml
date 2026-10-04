@@ -1,0 +1,76 @@
+################################################################################
+# DocuSentinel AI — Render Deployment Configuration
+# Deploys the FastAPI backend as a Web Service with a persistent disk for
+# uploaded documents, vector store, and SQLite database.
+#
+# Steps to deploy:
+#   1. Push this repo to GitHub (already done).
+#   2. Go to https://dashboard.render.com → New → Blueprint.
+#   3. Connect your GitHub repo (Aswini3112/DocuSentinel).
+#   4. Render auto-detects this file and creates the service.
+#   5. Add environment variables in the Render dashboard (see below).
+################################################################################
+
+services:
+  - type: web
+    name: docusentinel-api
+    runtime: python
+    region: singapore          # closest to India; change to oregon/frankfurt if preferred
+    plan: free                 # upgrade to starter ($7/mo) for always-on + more RAM
+    rootDir: .                 # repo root (not backend/)
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+
+    # ── Persistent disk ────────────────────────────────────────────────────
+    # Mounts /opt/data so uploads, vectors, and SQLite DB survive redeploys.
+    # NOTE: Persistent disks are NOT available on the free plan.
+    #       On free tier, data resets on every deploy. Use the demo/load button
+    #       after each deploy to re-ingest the demo documents.
+    #       Upgrade to Starter plan ($7/mo) to enable the disk.
+    disk:
+      name: docusentinel-data
+      mountPath: /opt/data
+      sizeGB: 1
+
+    # ── Environment variables ──────────────────────────────────────────────
+    # Set these in the Render Dashboard → Environment tab.
+    # Values marked REQUIRED must be set manually (not committed to git).
+    envVars:
+      - key: RENDER
+        value: "true"
+
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+
+      # Data paths (all under the mounted persistent disk)
+      - key: UPLOAD_DIR
+        value: /opt/data/uploads
+
+      - key: VECTORSTORE_DIR
+        value: /opt/data/vectorstore
+
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:////opt/data/docusentinel.db
+
+      # CORS — add your Vercel frontend URL
+      # Replace docusentinel-ai.vercel.app with your actual Vercel URL
+      - key: ALLOWED_ORIGINS
+        value: "https://docusentinel-ai.vercel.app,http://localhost:5173"
+
+      # Processing settings
+      - key: CHUNK_SIZE
+        value: "150"
+      - key: CHUNK_OVERLAP
+        value: "20"
+      - key: TOP_K_RETRIEVAL
+        value: "8"
+      - key: SIMILARITY_THRESHOLD
+        value: "0.05"
+      - key: MAX_FILE_SIZE_MB
+        value: "50"
+
+      # ── SET THESE MANUALLY IN RENDER DASHBOARD (never commit real values) ──
+      # LLM_API_KEY — your Groq/OpenAI API key
+      # LLM_MODEL   — e.g. llama-3.3-70b-versatile
+      # LLM_BASE_URL — e.g. https://api.groq.com/openai/v1

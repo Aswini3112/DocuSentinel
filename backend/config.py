@@ -1,13 +1,22 @@
 """
 DocuSentinel AI - Application Configuration
-Supports any OpenAI-compatible LLM provider: OpenAI, Groq, Together, Ollama, etc.
+Works locally and on Render (cloud) via environment variables.
+All paths default to a /opt/data directory on Render (persistent disk).
 """
 
+import os
 from pathlib import Path
 from pydantic_settings import BaseSettings
 from functools import lru_cache
 
 _ENV_FILE = Path(__file__).parent / ".env"
+
+# Detect whether we are running on Render
+_ON_RENDER = os.environ.get("RENDER") == "true"
+
+# Default data directory — /opt/data on Render (mounted persistent disk),
+# <repo_root>/data locally
+_DEFAULT_DATA_DIR = "/opt/data" if _ON_RENDER else str(Path(__file__).parent.parent / "data")
 
 
 class Settings(BaseSettings):
@@ -15,33 +24,30 @@ class Settings(BaseSettings):
     app_name: str = "DocuSentinel AI"
     app_version: str = "1.0.0"
     debug: bool = False
+
+    # CORS — add your Vercel URL here or via env var
+    # Example: "https://docusentinel.vercel.app,http://localhost:5173"
     allowed_origins: str = "http://localhost:5173,http://localhost:3000"
 
-    # ── LLM (OpenAI-compatible) ────────────────────────────────────────────
-    # Set LLM_API_KEY to enable real AI answers.
-    # Leave blank to run in evidence-only mode (no LLM, shows NOT_CONFIGURED).
+    # ── LLM (any OpenAI-compatible API) ───────────────────────────────────
     llm_api_key: str = ""
-    llm_model: str = "llama-3.3-70b-versatile"          # Groq default; use gpt-4o-mini for OpenAI
-    llm_base_url: str = "https://api.groq.com/openai/v1" # Groq; leave blank for OpenAI default
+    llm_model: str = "llama-3.3-70b-versatile"
+    llm_base_url: str = "https://api.groq.com/openai/v1"
     llm_temperature: float = 0.1
     llm_max_tokens: int = 1500
+    openai_api_key: str = ""   # legacy alias
 
-    # Legacy alias — maps OPENAI_API_KEY → llm_api_key if set
-    openai_api_key: str = ""
+    # ── Paths — all overridable via env vars ──────────────────────────────
+    upload_dir: str = f"{_DEFAULT_DATA_DIR}/uploads"
+    vectorstore_dir: str = f"{_DEFAULT_DATA_DIR}/vectorstore"
+    database_url: str = f"sqlite+aiosqlite:///{_DEFAULT_DATA_DIR}/docusentinel.db"
 
-    # ── Paths ──────────────────────────────────────────────────────────────
-    upload_dir: str = str(Path(__file__).parent.parent / "data" / "uploads")
-    vectorstore_dir: str = str(Path(__file__).parent.parent / "data" / "vectorstore")
-    database_url: str = (
-        f"sqlite+aiosqlite:///{Path(__file__).parent.parent / 'data' / 'docusentinel.db'}"
-    )
-
-    # ── Processing ─────────────────────────────────────────────────────────
+    # ── Processing ────────────────────────────────────────────────────────
     max_file_size_mb: int = 50
-    chunk_size: int = 150       # words per chunk — small enough for demo docs to get many chunks
+    chunk_size: int = 150
     chunk_overlap: int = 20
     top_k_retrieval: int = 8
-    similarity_threshold: float = 0.05  # low threshold — TF-IDF scores are naturally lower
+    similarity_threshold: float = 0.05
 
     tesseract_cmd: str = ""
 
@@ -50,11 +56,8 @@ class Settings(BaseSettings):
         env_file_encoding = "utf-8"
         extra = "ignore"
 
-    # ── Derived properties ──────────────────────────────────────────────────
-
     @property
     def effective_llm_api_key(self) -> str:
-        """Returns the first non-empty key from llm_api_key or legacy openai_api_key."""
         return self.llm_api_key or self.openai_api_key or ""
 
     @property
