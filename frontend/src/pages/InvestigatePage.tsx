@@ -67,11 +67,16 @@ export default function InvestigatePage() {
   }
 
   const tabs = [
-    { id: 'answer',    label: 'Answer',    count: null },
-    { id: 'evidence',  label: 'Evidence',  count: result?.evidence.length },
-    { id: 'sources',   label: 'Sources',   count: result?.sources.length },
-    { id: 'conflicts', label: 'Conflicts', count: result?.conflicts.length, alert: result?.has_conflict },
-  ] as const
+  { id: 'answer',    label: 'Answer',    count: null, alert: false },
+  { id: 'evidence',  label: 'Evidence', count: result?.evidence.length, alert: false },
+  { id: 'sources',   label: 'Sources',  count: result?.sources.length, alert: false },
+  {
+    id: 'conflicts',
+    label: 'Conflicts',
+    count: result?.conflicts.length,
+    alert: result?.has_conflict ?? false,
+  },
+] as const
 
   const llmConfigured = health?.llm_status === 'CONFIGURED'
 
